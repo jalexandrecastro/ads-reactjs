@@ -13,6 +13,7 @@ const options = [
   { path: "/list", label: "Lista" },
   { path: "/form", label: "Formulário" },
   { path: "/formActions", label: "Formulário com Ações" },
+  { path: "/formActionsThemeMode", label: "Formulário com Tema" },
 ];
 
 function Sidebar() {

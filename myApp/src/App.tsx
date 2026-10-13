@@ -15,6 +15,7 @@ import FormActions from "./scenes/formActions";
 import DetailsProps from "./scenes/details/DetailsProps";
 import DetailsContext from "./scenes/details/DetailsContext";
 import DetailsZustand from "./scenes/details/DetailsZustand";
+import FormActionsThemeMode from "./scenes/formThemeMode";
 
 const user = {
   name: "Maria Silva",
@@ -69,6 +70,7 @@ function App() {
         <Route path="details/props" element={<DetailsProps />} />
         <Route path="details/context" element={<DetailsContext />} />
         <Route path="details/zustand" element={<DetailsZustand />} />
+        <Route path="formActionsThemeMode" element={<FormActionsThemeMode />} />
       </Route>
     </Routes>
   );

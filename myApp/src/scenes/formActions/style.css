@@ -85,6 +85,52 @@
   background-color: #5a6268;
 }
 
+/* Barra de ferramentas acima do formulário */
+.form-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+/* Botão que alterna o tema (usa useEffect para aplicar a classe no body) */
+.form-toolbar .form-button-theme {
+  width: auto;
+  padding: 8px 12px;
+  background-color: #4b5563;
+}
+
+.form-toolbar .form-button-theme:hover {
+  background-color: #374151;
+}
+
+/* Tema escuro aplicado via classe no <body> */
+body.dark-mode {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .form-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-label,
+body.dark-mode .form-checkbox-label {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-input {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .form-table td {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-table tbody tr {
+  border-bottom-color: #333;
+}
+
 /* Tabela de usuários dentro do formulário */
 .form-table {
   padding: 5px;

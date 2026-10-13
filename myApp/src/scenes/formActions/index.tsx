@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "./style.css";
@@ -23,6 +23,7 @@ function FormActions() {
   // A lista fica persistida no localStorage (dados sobrevivem ao reload da página)
   const [users, setUsers] = useLocalStorage<User[]>(USERS_STORAGE_KEY, []);
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
+
   const navigate = useNavigate();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
