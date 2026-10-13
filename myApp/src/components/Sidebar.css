@@ -1,0 +1,48 @@
+.app-layout {
+	display: flex;
+	min-height: 100vh;
+}
+
+.app-conteudo {
+	flex: 1;
+	padding: 12px;
+	overflow: auto;
+}
+
+.sidebar {
+	width: 180px;
+	min-height: 100vh;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #1e1b2e;
+}
+
+.sidebar__titulo {
+	margin: 0 0 20px;
+	font-size: 1rem;
+	color: #ffffff;
+}
+
+.sidebar__nav {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.sidebar__link {
+	padding: 8px 12px;
+	border-radius: 6px;
+	color: #c4bfd6;
+	text-decoration: none;
+}
+
+.sidebar__link:hover {
+	background: #2c2740;
+	color: #ffffff;
+}
+
+.sidebar__link--ativo,
+.sidebar__link--ativo:hover {
+	background: #aa3bff;
+	color: #ffffff;
+}

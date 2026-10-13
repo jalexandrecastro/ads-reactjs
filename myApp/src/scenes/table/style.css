@@ -1,0 +1,46 @@
+.table-container {
+	padding: 20px;
+	overflow-x: auto;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+}
+
+.table-header {
+	background-color: #0066cc;
+	color: #fff;
+	text-align: left;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 12px 16px;
+}
+
+.table-row {
+	border-bottom: 1px solid #e5e5e5;
+	transition: background-color 0.2s ease;
+}
+
+.table-row:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.table-row:last-child {
+	border-bottom: none;
+}
+
+.table-row:hover {
+	background-color: #eef5ff;
+}
+
+.table-cell {
+	padding: 12px 16px;
+	color: #333;
+}

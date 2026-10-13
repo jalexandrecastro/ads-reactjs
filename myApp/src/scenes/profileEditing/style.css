@@ -1,0 +1,96 @@
+.profile-editing-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 24px;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+}
+
+.profile-editing-container h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 24px;
+}
+
+.profile-editing-card {
+	width: 100%;
+	max-width: 400px;
+	padding: 24px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.profile-editing-info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.profile-editing-info h2 {
+	margin: 0 0 8px;
+	font-size: 20px;
+	color: #0066cc;
+}
+
+/* Cada linha do editor (Nome / Idade) */
+.profile-editing-info > div {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.profile-editing-info label {
+	width: 56px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #555;
+}
+
+.profile-editing-info input {
+	flex: 1;
+	padding: 10px 12px;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+	box-sizing: border-box;
+	transition: border-color 0.2s ease-in-out;
+}
+
+.profile-editing-info input:focus {
+	border-color: #0066cc;
+}
+
+/* Botões de incrementar/decrementar idade */
+.profile-editing-info button {
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #0066cc;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.profile-editing-info button:hover {
+	background-color: #0052a3;
+}
+
+.profile-editing-info span {
+	min-width: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
