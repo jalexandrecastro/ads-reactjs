@@ -1,0 +1,101 @@
+.use-effect-scene {
+	max-width: 520px;
+	margin: 40px auto;
+	padding: 32px;
+	border-radius: 12px;
+	background: #f8fafc;
+	box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.use-effect-scene h1 {
+	margin: 0 0 8px;
+	color: #1641b8;
+	font-size: 24px;
+}
+
+.use-effect-hint {
+	margin: 0 0 24px;
+	color: #64748b;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.use-effect-display {
+	margin: 0 0 16px;
+	color: #334155;
+	font-size: 56px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-variant-numeric: tabular-nums;
+}
+
+.use-effect-status {
+	margin: 0 0 16px;
+	color: #475569;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.use-effect-alert {
+	margin: 0 0 16px;
+	padding: 12px;
+	border: 1px solid #fecaca;
+	border-radius: 8px;
+	background: #fee2e2;
+	color: #b91c1c;
+	font-weight: bold;
+	animation: use-effect-alert-pulse 1s ease-in-out infinite;
+}
+
+@keyframes use-effect-alert-pulse {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.use-effect-actions {
+	display: flex;
+	gap: 8px;
+}
+
+.use-effect-button {
+	flex: 1;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	background: #1641b8;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.use-effect-button:hover {
+	background: #2563eb;
+}
+
+.use-effect-button:active {
+	background: #0f2f8a;
+}
+
+.use-effect-button--secondary {
+	background: #e2e8f0;
+	color: #334155;
+}
+
+.use-effect-button--secondary:hover {
+	background: #cbd5e1;
+}
+
+.use-effect-button--secondary:active {
+	background: #94a3b8;
+}
